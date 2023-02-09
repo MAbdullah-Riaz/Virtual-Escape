@@ -8,6 +8,8 @@
   font-size: 18px;
   text-transform: uppercase;
   margin: 5px auto;
+
+  cursor: pointer;
   justify-content: center;
 
   @media screen and (max-device-width: 768px) {
@@ -24,16 +26,20 @@
 
 .log-in {
   background-color: rgb(31, 62, 81);
+  cursor: default;
 }
 .base {
   background: linear-gradient(#67747b, #3d4549);
 }
 .len-maxed {
+  cursor: pointer;
   background: linear-gradient(#f80705, #7b1e1d);
 }
 
 .return-to-main {
   display: flex;
+
+  cursor: pointer;
   margin: 50px 10px;
   border-radius: 29px;
   color: #ffffff;

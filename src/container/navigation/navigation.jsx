@@ -22,7 +22,7 @@ export const Navigation = () => {
         <img src={logo2} alt='virtual escape logo' />
       </div>
       <div className={styles['icon']}>
-        <i className={styles['fas fa-bars']}></i>
+        <i className='fas fa-bars'></i>
       </div>
 
       <div className={styles['pages']}>
