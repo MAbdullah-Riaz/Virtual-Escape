@@ -1,20 +1,18 @@
-import { IconContainer } from './icon.styles';
 import { Tooltip } from 'react-tooltip';
+import { Fragment } from 'react';
 import 'react-tooltip/dist/react-tooltip.css';
-import { Fragment, useState } from 'react';
+import styles from './Icon.module.scss';
 
-const Icon = ({ textColor, backgroundColor, className }) => {
+const Icon = ({ className }) => {
   return (
     <Fragment>
-      <IconContainer
-        textColor={textColor}
-        backgroundColor={backgroundColor}
-        className={className}
+      <div
+        className={`${styles[`icon-container`]} ${className}`}
         id='my-element'
       >
         ?
-      </IconContainer>
-      <Tooltip anchorId='my-element' variant='error' className='red'>
+      </div>
+      <Tooltip anchorId='my-element' className='red'>
         <span>
           Your game code is 8 characters long and can be
           <br />

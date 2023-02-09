@@ -1,23 +1,23 @@
 .main-container {
-  background: url('../../assets/background-images/mainmenu.png') no-repeat center fixed;
+  background: url('../../assets/background-images/mainmenu.png') no-repeat
+    center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
- 
-  .names{
-      text-align: center;
-      font-family: montserrat;
-      color: #fff;
-       
-}
- h1 {
-           font-size: clamp(2rem, 3.1vw, 3.75rem);  //60px
-            margin-top: 0px;
-            padding: 0 10px;
-    }
-    p {
-            font-size:  clamp(1rem, 1.5vw, 2rem) ;
-     }
+
+  .names {
+    text-align: center;
+    font-family: montserrat;
+    color: #fff;
+  }
+  h1 {
+    font-size: clamp(2rem, 3.1vw, 3.75rem); //60px
+    margin-top: 0px;
+    padding: 0 10px;
+  }
+  p {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+  }
 }

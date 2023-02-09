@@ -1,11 +1,11 @@
 .input-container{
 position: relative;
-max-width: 470px;
+max-width: 480px;
 border-radius: 29px;
 margin: auto;
 
 input{
-    width: 95%;
+    width: 90%;
     border: none;
     padding: 13px;
     border-radius: 29px;
@@ -17,9 +17,5 @@ input{
  }
  ::placeholder{
     color: #ffffffcf;
- }
- ::selection {
-    border: none;
-     color: #ffffffaf;
  }
 }

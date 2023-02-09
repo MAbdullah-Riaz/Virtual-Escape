@@ -1,88 +1,83 @@
-.main-login-container{
-    background: url('../../assets/background-images/login.png') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    padding-right: 10px;
-    padding-left: 10px;
-    
-    .align-button{
+.main-login-container {
+  background: url('../../assets/background-images/login.png') no-repeat center
+    center fixed;
+  background-size: cover;
+  height: 100vh;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  .align-button {
     margin: auto;
     margin-top: 10px;
-    max-width: 480px;
+    max-width: 460px;
     display: flex;
     justify-content: space-evenly;
     gap: 5px;
-    
-}
-.logo-container{
+  }
+  .logo-container {
     padding-top: 20px;
     padding-left: 100px;
     display: flex;
     gap: 20px;
-}
- img {
-        width: 100px;
-    }
-.glassyBg{
-    
-  border-radius: 10px;
-  max-width: 909px;
-  padding-bottom: 65px;
-  color: #fff;
-  background: rgba(17, 52, 70, 0.53);
-  backdrop-filter: blur(40px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(53, 81, 93, 1);
-  padding-left: 10px;
-  text-align: center;
-  padding-right: 10px;
-  position: relative;
+  }
+  img {
+    width: 100px;
+  }
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -55%);
-    
+  .glassyBg {
+    border-radius: 10px;
+    max-width: max(800px, 42%);
+    padding-bottom: 65px;
+    color: #fff;
+    background: rgba(17, 52, 70, 0.53);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(53, 81, 93, 1);
+    padding-left: 10px;
+    text-align: center;
+    padding-right: 10px;
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
     .name {
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-top: 50px;
-    margin-bottom: 0px;
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-top: 50px;
+      margin-bottom: 0px;
     }
     .desc {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
 
-   
- 
     @media screen and (max-device-width: 768px) {
-    .name {
+      .name {
         font-size: 38px;
-    }
-    .desc {
+      }
+      .desc {
         font-size: 1.25rem;
+      }
     }
-}
-@media screen and (max-device-width: 480px) {
-   
-    
-    .name {
+    @media screen and (max-device-width: 480px) {
+      .name {
         font-size: 30px;
-    }
-    .desc {
+      }
+      .desc {
         font-size: 1rem;
+      }
     }
-}
-}
-@media screen and (max-device-width: 480px) 
-{
+  }
+  @media screen and (max-device-width: 480px) {
     .logo-container {
-        padding-left: 30px;
+      padding-left: 30px;
     }
     img {
-        width: 80px;
+      width: 80px;
     }
-}
-.footer{
+  }
+  .footer {
     margin: 0px 0px;
     font-size: 1rem;
     color: #ffffff;
@@ -90,5 +85,5 @@
     bottom: 10px;
     width: 98%;
     text-align: center;
-}
+  }
 }

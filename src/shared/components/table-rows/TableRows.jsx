@@ -1,4 +1,4 @@
-import styles from './table-rows.module.scss';
+import styles from './TableRows.module.scss';
 
 export const TableRows = ({ row }) => {
   const { rank, teamName, hints, incorrect, result } = row;

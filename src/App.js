@@ -1,4 +1,4 @@
-import { RoutesConstants } from 'routes/RoutesConstants';
+import { RoutesConstants } from 'container/routes/RoutesConstants';
 
 import './App.scss';
 function App() {

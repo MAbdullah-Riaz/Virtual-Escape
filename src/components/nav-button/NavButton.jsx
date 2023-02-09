@@ -1,8 +1,6 @@
-import './nav-button.styles.scss';
+import styles from './NavButton.module.scss';
 
 export const NavButton = ({ buttonName, imageLink, onClickHandler }) => {
- 
-
   const handleOnClick = () => onClickHandler?.();
   return (
     <button onClick={handleOnClick}>

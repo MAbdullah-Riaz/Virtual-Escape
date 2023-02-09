@@ -1,0 +1,35 @@
+.card-container {
+  background-image: url('../../../assets/card/card-background.svg');
+  background-size: cover;
+  width: 282px;
+  height: 350px;
+  color: rgba(255, 255, 255, 0.801);
+  font-family: montserrat;
+  font-size: 32px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+
+  .text-container {
+    font-size: 32px;
+    font-weight: normal;
+  }
+  img {
+    padding-top: 25px;
+  }
+
+  &:hover {
+    background-image: url('../../../assets/card/hoverCard.svg');
+    color: rgba(255, 255, 255, 1);
+  }
+
+  @media screen and (max-device-width: 400px) {
+    & {
+      margin-left: 0px;
+    }
+  }
+}

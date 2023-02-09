@@ -1,19 +1,20 @@
-import { Card } from '../card/card';
+import { Card } from '../../shared/components/card/Card';
 import card11 from '../../assets/card/card11.svg';
 import card22 from '../../assets/card/card22.svg';
 import card33 from '../../assets/card/card33.svg';
 import card44 from '../../assets/card/card44.svg';
-import './card-list.styles.scss';
+import styles from './CardList.module.scss';
+import { LEADERBOARD_ROUTE } from 'container/routes/constants';
 export const CardList = () => {
   const cardArray = [
     { name: 'OUR GAMES', image: card11 },
-    { name: 'LEADERBOARD', image: card22, route: '/leaderboard' },
+    { name: 'LEADERBOARD', image: card22, route: LEADERBOARD_ROUTE },
     { name: 'HOW TO PLAY', image: card33 },
     { name: 'START GAME', image: card44 },
   ];
 
   return (
-    <div className='card-list'>
+    <div className={styles['card-list']}>
       {cardArray.map((eachCard) => (
         <Card
           key={eachCard.name}

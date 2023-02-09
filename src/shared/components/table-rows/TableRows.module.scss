@@ -12,12 +12,11 @@ tr {
   height: 35px;
 }
 
-
 @media screen and (max-device-width: 480px) {
- 
   tr {
     font-size: small;
   }
   th {
     font-size: 11px;
-  }}
+  }
+}

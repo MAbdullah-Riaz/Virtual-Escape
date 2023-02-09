@@ -1,9 +1,9 @@
-import Icon from '../icon/icon';
-import './input.styles.scss';
+import Icon from '../../shared/components/icon/Icon';
+import styles from './Input.module.scss';
 
 const Input = ({ placeholder, onChangeHandler }) => {
   return (
-    <div className='input-container'>
+    <div className={styles['input-container']}>
       <input
         placeholder={placeholder}
         maxLength='8'
