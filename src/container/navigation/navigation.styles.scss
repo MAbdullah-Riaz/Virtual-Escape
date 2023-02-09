@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 7%;
+  align-items: center;
+  .logo {
+  justify-content: flex-start;
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+}
+  .icon {
+  display: none;
+   }
+.pages {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-device-width: 1380px) {
+  & {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-device-width: 868px) {
+     .pages {
+    display: none;
+    }
+    & .icon {
+    display: flex;
+    font-size: 25px;
+    padding: 10px 10px;
+    border: 1px solid rgba(68, 88, 101, 0.7);
+    border-radius: 5px;
+    color: aliceblue;
+  }
+
+}
+@media screen and (max-device-width: 480px) {
+  & {
+    padding: 10px 10px 10px 10px;
+  }
+  .logo {
+
+    height: 60%;
+    gap: 6px;
+  }
+}
+@media screen and (max-device-width: 380px) {
+
+  .logo {
+    gap: 5px;
+    height: 30px;
+  }
+  & {
+    padding: 10px 10px;
+  }
+}
+}

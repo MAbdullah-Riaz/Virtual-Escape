@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="141" viewBox="0 0 141 141">
+  <g id="Group_60" data-name="Group 60" transform="translate(-742 -582)">
+    <g id="Group_3_Copy_2" data-name="Group 3 Copy 2" transform="translate(744 584)" opacity="0.8">
+      <g id="Group">
+        <circle id="Oval_3" data-name="Oval 3" cx="68.5" cy="68.5" r="68.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+      </g>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(792 616)" opacity="0.8">
+      <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(0 19)" fill="none" stroke-miterlimit="10">
+        <path d="M3,0H20L17,50H0Z" stroke="none"/>
+        <path d="M 6.767190933227539 4 L 4.247190475463867 46 L 13.23280906677246 46 L 15.75280952453613 4 L 6.767190933227539 4 M 3 0 L 20 0 L 17 50 L 0 50 L 3 0 Z" stroke="none" fill="#fff"/>
+      </g>
+      <g id="Rectangle_6_Copy" data-name="Rectangle 6 Copy" transform="translate(21)" fill="none" stroke-miterlimit="10">
+        <path d="M3,0H20L17,69H0Z" stroke="none"/>
+        <path d="M 6.829859733581543 4 L 4.177685737609863 65 L 13.17014122009277 65 L 15.82231521606445 4 L 6.829859733581543 4 M 3 0 L 20 0 L 17 69 L 0 69 L 3 0 Z" stroke="none" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
