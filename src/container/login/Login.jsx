@@ -7,8 +7,8 @@ import ExperiousLogo from 'assets/logo/logo1.png';
 import VirtualEscapeLogo from 'assets/logo/logo2.png';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
 import { ReactComponent as ThumbIcon } from 'assets/thumb.svg';
-import { MAIN_ROUTE } from 'container/routes/Constants';
-import styles from './LogIn.module.scss';
+import { MAIN_ROUTE } from 'container/routes/ConstantsZX';
+import styles from './Login.module.scss';
 
 const LogIn = () => {
   const { setLogin } = useAuthContext();

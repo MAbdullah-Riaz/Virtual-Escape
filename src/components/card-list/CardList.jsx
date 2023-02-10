@@ -4,7 +4,7 @@ import card11 from 'assets/card/card11.svg';
 import card22 from 'assets/card/card22.svg';
 import card33 from 'assets/card/card33.svg';
 import card44 from 'assets/card/card44.svg';
-import { LEADERBOARD_ROUTE } from 'container/routes/Constants';
+import { LEADERBOARD_ROUTE } from 'container/routes/ConstantsZX';
 
 import styles from './CardList.module.scss';
 

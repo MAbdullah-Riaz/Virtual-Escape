@@ -4,9 +4,9 @@ import { Navigation } from 'container/navigation/Navigation';
 import { Table } from 'shared/components/table/Table';
 import { ReactComponent as MenuIcon } from 'assets/returnMenu.svg';
 
-import { MAIN_ROUTE } from 'container/routes/Constants';
+import { MAIN_ROUTE } from 'container/routes/ConstantsZX';
 
-import styles from './LeaderBoard.module.scss';
+import styles from './Leaderboard.module.scss';
 
 export const Leaderboard = () => {
   const navigate = useNavigate();

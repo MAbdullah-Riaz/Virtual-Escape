@@ -8,7 +8,7 @@ import {
   MAIN_ROUTE,
   LEADERBOARD_ROUTE,
   LOGIN_ROUTE,
-} from 'container/routes/Constants';
+} from 'container/routes/ConstantsZX';
 
 export const Routes = () => {
   return (

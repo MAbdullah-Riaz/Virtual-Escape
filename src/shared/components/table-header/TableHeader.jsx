@@ -1,4 +1,4 @@
-import { Header } from 'data/table/Header';
+import { Header } from 'data/table/HeaderZX';
 import styles from './TableHeader.module.scss';
 
 export const TableHeader = () => {

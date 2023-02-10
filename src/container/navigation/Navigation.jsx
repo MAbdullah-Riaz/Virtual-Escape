@@ -5,7 +5,7 @@ import loginIcon from 'assets/login.png';
 import connectedIcon from 'assets/connected.png';
 import { NavButton } from 'components/nav-button/NavButton';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
-import { LOGIN_ROUTE } from 'container/routes/Constants';
+import { LOGIN_ROUTE } from 'container/routes/ConstantsZX';
 import styles from './Navigation.module.scss';
 
 export const Navigation = () => {
