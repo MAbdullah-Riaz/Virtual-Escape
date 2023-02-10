@@ -1,7 +1,7 @@
 import { Route, Routes as BrowserRouter } from 'react-router-dom';
-import { Leaderboard } from 'container/leaderboard/LeaderboardZX';
-import LogIn from 'container/login/LogInZX';
-import MainMenu from 'container/main-menu/MainMenuZX';
+import { Leaderboard } from 'container/leaderboard/Leaderboard';
+import LogIn from 'container/login/Login';
+import MainMenu from 'container/main-menu/MainMenu';
 import PrivateRoutes from 'container/routes/PrivateRoutes';
 
 import {

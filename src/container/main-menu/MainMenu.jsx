@@ -1,5 +1,5 @@
-import { Navigation } from 'container/navigation/NavigationZX';
-import { CardList } from 'components/card-list/CardListZX';
+import { Navigation } from 'container/navigation/Navigation';
+import { CardList } from 'components/card-list/CardList';
 import styles from './MainMenu.module.scss';
 
 const MainMenu = () => {

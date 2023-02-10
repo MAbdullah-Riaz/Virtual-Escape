@@ -1,4 +1,4 @@
-import Icon from 'shared/components/icon/IconZX';
+import Icon from 'shared/components/icon/Icon';
 import styles from './Input.module.scss';
 
 const Input = ({ placeholder, onChangeHandler }) => {

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import Input from 'components/input/InputZX';
-import Button from 'shared/components/button/ButtonZX';
+import Input from 'components/input/Input';
+import Button from 'shared/components/button/Button';
 import ExperiousLogo from 'assets/logo/logo1.png';
 import VirtualEscapeLogo from 'assets/logo/logo2.png';
 import { useAuthContext } from 'context/auth-context/AuthContainer';

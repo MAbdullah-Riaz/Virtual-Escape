@@ -1,4 +1,4 @@
-import { Card } from 'shared/components/card/CardZX';
+import { Card } from 'shared/components/card/Card';
 
 import card11 from 'assets/card/card11.svg';
 import card22 from 'assets/card/card22.svg';
