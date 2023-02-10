@@ -1,13 +1,14 @@
-import Input from 'components/input/Input';
-import MainButton from 'shared/components/button/Button';
-import ExperiousLogo from 'assets/logo/logo1.png';
-import VirtualEscapeLogo from 'assets/logo/logo2.png';
-import { ReactComponent as ThumbIcon } from 'assets/thumb.svg';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+import Input from 'components/input/InputZX';
+import Button from 'shared/components/button/ButtonZX';
+import ExperiousLogo from 'assets/logo/logo1.png';
+import VirtualEscapeLogo from 'assets/logo/logo2.png';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
-import styles from './LogIn.module.scss';
+import { ReactComponent as ThumbIcon } from 'assets/thumb.svg';
 import { MAIN_ROUTE } from 'container/routes/Constants';
+import styles from './LogIn.module.scss';
 
 const LogIn = () => {
   const { setLogin } = useAuthContext();
@@ -42,9 +43,9 @@ const LogIn = () => {
         <div>
           <Input placeholder={'Game Code'} onChangeHandler={onChangeHandler} />
           <div className={styles['align-button']}>
-            <MainButton name='test connection' />
+            <Button name='test connection' />
 
-            <MainButton
+            <Button
               buttonType={'log-in'}
               name={'login'}
               rightImage={<ThumbIcon />}

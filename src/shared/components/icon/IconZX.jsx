@@ -1,7 +1,8 @@
-import { Tooltip } from 'react-tooltip';
 import { Fragment } from 'react';
-import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip } from 'react-tooltip';
+
 import styles from './Icon.module.scss';
+import 'react-tooltip/dist/react-tooltip.css';
 
 const Icon = ({ className }) => {
   return (

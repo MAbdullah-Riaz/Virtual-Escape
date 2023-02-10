@@ -1,11 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import experiosLogo from 'assets/logo/logo1.png';
 import virtualEscapeLogo from 'assets/logo/logo2.png';
 import loginIcon from 'assets/login.png';
 import connectedIcon from 'assets/connected.png';
-import { NavButton } from 'components/nav-button/NavButton';
-import { useNavigate } from 'react-router-dom';
+import { NavButton } from 'components/nav-button/NavButtonZX';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
-import { MAIN_ROUTE } from 'container/routes/Constants';
+import { LOGIN_ROUTE } from 'container/routes/Constants';
 import styles from './Navigation.module.scss';
 
 export const Navigation = () => {
@@ -31,7 +31,7 @@ export const Navigation = () => {
         <NavButton
           buttonName={'LOG OUT'}
           imageLink={loginIcon}
-          onClickHandler={() => onClickHandler(MAIN_ROUTE)}
+          onClickHandler={() => onClickHandler(LOGIN_ROUTE)}
         />
       </div>
     </div>

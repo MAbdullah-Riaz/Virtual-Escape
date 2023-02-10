@@ -1,11 +1,13 @@
-import styles from './LeaderBoard.module.scss';
-import { Navigation } from 'container/navigation/Navigation';
-import { Table } from 'shared/components/table/Table';
 import { useNavigate } from 'react-router-dom';
-import MainButton from 'shared/components/button/Button';
+import Button from 'shared/components/button/ButtonZX';
+import { Navigation } from 'container/navigation/NavigationZX';
+import { Table } from 'shared/components/table/TableZX';
 import { ReactComponent as MenuIcon } from 'assets/returnMenu.svg';
-import { ReactComponent as Thumb } from 'assets/thumb.svg';
+
 import { MAIN_ROUTE } from 'container/routes/Constants';
+
+import styles from './LeaderBoard.module.scss';
+
 export const Leaderboard = () => {
   const navigate = useNavigate();
 
@@ -20,7 +22,7 @@ export const Leaderboard = () => {
         <div className={styles['main-table']}>
           <Table />
         </div>
-        <MainButton
+        <Button
           name='RETURN TO MAIN MENU'
           onClickHandler={onClickHandler}
           leftImage={<MenuIcon />}

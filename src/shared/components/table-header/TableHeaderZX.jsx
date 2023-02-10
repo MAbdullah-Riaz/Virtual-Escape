@@ -1,10 +1,11 @@
+import { Header } from 'data/table/Header';
 import styles from './TableHeader.module.scss';
-import { headerNames } from 'data/table/header';
+
 export const TableHeader = () => {
-  const headers = headerNames;
+  const headerNames = Header;
   return (
     <tr>
-      {headers.map((element) => (
+      {headerNames.map((element) => (
         <th>{element}</th>
       ))}
     </tr>

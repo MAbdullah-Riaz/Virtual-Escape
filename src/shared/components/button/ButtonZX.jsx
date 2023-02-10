@@ -1,6 +1,6 @@
 import styles from './Button.module.scss';
 
-const MainButton = ({
+const Button = ({
   buttonType,
   name,
   rightImage,
@@ -22,4 +22,4 @@ const MainButton = ({
   );
 };
 
-export default MainButton;
+export default Button;

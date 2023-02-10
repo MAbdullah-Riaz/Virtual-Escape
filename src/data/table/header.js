@@ -1,7 +1,1 @@
-export const headerNames = [
-  'Rank',
-  'Team Name',
-  'Hints',
-  'Incorrect',
-  'Results',
-];
+export const Header = ['Rank', 'Team Name', 'Hints', 'Incorrect', 'Results'];
