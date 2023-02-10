@@ -4,14 +4,18 @@ import { defaultAuthContext } from './AuthInterface';
 import { useNavigate } from 'react-router-dom';
 
 const AuthContextContainer = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const navigate = useNavigate();
-
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    JSON.parse(localStorage.getItem('isAuthenticated')) ?? false
+  );
   const setLogin = () => {
     setIsAuthenticated(true);
+    localStorage.setItem('isAuthenticated', JSON.stringify(true));
   };
 
-  const setLogout = () => setIsAuthenticated(false);
+  const setLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem('isAuthenticated');
+  };
   const value = { isAuthenticated, setIsAuthenticated, setLogin, setLogout };
   return <AuthProvider value={value}>{children}</AuthProvider>;
 };

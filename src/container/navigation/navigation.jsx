@@ -1,10 +1,11 @@
-import logo1 from 'assets/logo/logo1.png';
-import logo2 from 'assets/logo/logo2.png';
+import experiosLogo from 'assets/logo/logo1.png';
+import virtualEscapeLogo from 'assets/logo/logo2.png';
 import loginIcon from 'assets/login.png';
 import connectedIcon from 'assets/connected.png';
 import { NavButton } from 'components/nav-button/NavButton';
 import { useNavigate } from 'react-router-dom';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
+import { MAIN_ROUTE } from 'container/routes/constants';
 import styles from './Navigation.module.scss';
 
 export const Navigation = () => {
@@ -18,8 +19,8 @@ export const Navigation = () => {
   return (
     <div className={styles['nav']}>
       <div className={styles['logo']}>
-        <img src={logo1} alt='experios logo' />
-        <img src={logo2} alt='virtual escape logo' />
+        <img src={experiosLogo} alt='experios logo' />
+        <img src={virtualEscapeLogo} alt='virtual escape logo' />
       </div>
       <div className={styles['icon']}>
         <i className='fas fa-bars'></i>
@@ -30,7 +31,7 @@ export const Navigation = () => {
         <NavButton
           buttonName={'LOG OUT'}
           imageLink={loginIcon}
-          onClickHandler={() => onClickHandler('/')}
+          onClickHandler={() => onClickHandler(MAIN_ROUTE)}
         />
       </div>
     </div>

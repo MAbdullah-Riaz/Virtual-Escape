@@ -1,8 +1,8 @@
 import Input from 'components/input/Input';
 import MainButton from 'shared/components/button/Button';
-import logo1 from 'assets/logo/logo1.png';
-import logo2 from 'assets/logo/logo2.png';
-import { ReactComponent as Thumb } from 'assets/thumb.svg';
+import experiousLogo from 'assets/logo/logo1.png';
+import VirtualEscapeLogo from 'assets/logo/logo2.png';
+import { ReactComponent as ThumbIcon } from 'assets/thumb.svg';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
@@ -31,8 +31,8 @@ const Login = () => {
   return (
     <div className={styles['main-login-container']}>
       <div className={styles['logo-container']}>
-        <img src={logo1} alt='experios-logo' />
-        <img src={logo2} alt='experios-logo' />
+        <img src={experiousLogo} alt='experios-logo' />
+        <img src={VirtualEscapeLogo} alt='experios-logo' />
       </div>
       <div className={styles['glassyBg']}>
         <p className={styles['name']}>VIRTUAL ESCAPE</p>
@@ -47,7 +47,7 @@ const Login = () => {
             <MainButton
               buttonType={'log-in'}
               name={'login'}
-              rightImage={<Thumb />}
+              rightImage={<ThumbIcon />}
               className={`${isLenMaxed ? 'len-maxed' : ''}`}
               onClickHandler={onClickHandler}
             />
