@@ -1,4 +1,4 @@
-import styles from './NavButton.module.scss';
+import './NavButton.module.scss';
 
 export const NavButton = ({ buttonName, imageLink, onClickHandler }) => {
   const handleOnClick = () => onClickHandler?.();
