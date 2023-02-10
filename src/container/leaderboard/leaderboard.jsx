@@ -1,11 +1,11 @@
-import styles from './Leaderboard.module.scss';
+import styles from './LeaderBoard.module.scss';
 import { Navigation } from 'container/navigation/Navigation';
 import { Table } from 'shared/components/table/Table';
 import { useNavigate } from 'react-router-dom';
 import MainButton from 'shared/components/button/Button';
 import { ReactComponent as MenuIcon } from 'assets/returnMenu.svg';
 import { ReactComponent as Thumb } from 'assets/thumb.svg';
-import { MAIN_ROUTE } from 'container/routes/constants';
+import { MAIN_ROUTE } from 'container/routes/Constants';
 export const Leaderboard = () => {
   const navigate = useNavigate();
 

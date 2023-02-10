@@ -1,15 +1,15 @@
 import Input from 'components/input/Input';
 import MainButton from 'shared/components/button/Button';
-import experiousLogo from 'assets/logo/logo1.png';
+import ExperiousLogo from 'assets/logo/logo1.png';
 import VirtualEscapeLogo from 'assets/logo/logo2.png';
 import { ReactComponent as ThumbIcon } from 'assets/thumb.svg';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
-import styles from './Login.module.scss';
-import { MAIN_ROUTE } from 'container/routes/constants';
+import styles from './LogIn.module.scss';
+import { MAIN_ROUTE } from 'container/routes/Constants';
 
-const Login = () => {
+const LogIn = () => {
   const { setLogin } = useAuthContext();
 
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ const Login = () => {
   return (
     <div className={styles['main-login-container']}>
       <div className={styles['logo-container']}>
-        <img src={experiousLogo} alt='experios-logo' />
+        <img src={ExperiousLogo} alt='experios-logo' />
         <img src={VirtualEscapeLogo} alt='experios-logo' />
       </div>
       <div className={styles['glassyBg']}>
@@ -61,4 +61,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LogIn;

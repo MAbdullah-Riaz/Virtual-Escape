@@ -4,7 +4,7 @@ import card22 from '../../assets/card/card22.svg';
 import card33 from '../../assets/card/card33.svg';
 import card44 from '../../assets/card/card44.svg';
 import styles from './CardList.module.scss';
-import { LEADERBOARD_ROUTE } from 'container/routes/constants';
+import { LEADERBOARD_ROUTE } from 'container/routes/Constants';
 export const CardList = () => {
   const cardArray = [
     { name: 'OUR GAMES', image: card11 },

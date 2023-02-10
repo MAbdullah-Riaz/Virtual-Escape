@@ -5,7 +5,7 @@ import connectedIcon from 'assets/connected.png';
 import { NavButton } from 'components/nav-button/NavButton';
 import { useNavigate } from 'react-router-dom';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
-import { MAIN_ROUTE } from 'container/routes/constants';
+import { MAIN_ROUTE } from 'container/routes/Constants';
 import styles from './Navigation.module.scss';
 
 export const Navigation = () => {
