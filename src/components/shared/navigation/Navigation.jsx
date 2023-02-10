@@ -3,9 +3,9 @@ import experiosLogo from 'assets/logo/logo1.png';
 import virtualEscapeLogo from 'assets/logo/logo2.png';
 import loginIcon from 'assets/login.png';
 import connectedIcon from 'assets/connected.png';
-import { NavButton } from 'components/nav-button/NavButton';
+import { NavButton } from 'components/shared/nav-button/NavButton';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
-import { LOGIN_ROUTE } from 'container/routes/ConstantsZX';
+import { LOGIN_ROUTE } from 'container/routes/Constants';
 import styles from './Navigation.module.scss';
 
 export const Navigation = () => {

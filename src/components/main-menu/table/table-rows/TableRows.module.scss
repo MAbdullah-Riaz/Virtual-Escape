@@ -1,5 +1,6 @@
 td {
   text-align: center;
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
 }
 tr:nth-child(odd) {
   background-color: #2d4955;

@@ -17,7 +17,7 @@ const Button = ({
       onClick={onClickHandle}
       className={`${styles['button-container']} ${styles[buttonTypeClass]} ${styles[className]} `}
     >
-      {leftImage} {name} {rightImage}
+      {leftImage && leftImage} {name} {rightImage && rightImage}
     </button>
   );
 };

@@ -1,6 +1,6 @@
-import { TableHeader } from '../table-header/TableHeader';
-import { TableRows } from '../table-rows/TableRows';
-import { MockData } from 'data/table/MockData';
+import { TableHeader } from './table-header/TableHeader';
+import { TableRows } from './table-rows/TableRows';
+import { MockData } from 'data/leaderboard/MockData';
 import styles from './Table.module.scss';
 export const Table = () => {
   const rows = MockData;

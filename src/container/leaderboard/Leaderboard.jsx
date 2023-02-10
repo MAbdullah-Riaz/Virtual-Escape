@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
-import Button from 'shared/components/button/Button';
-import { Navigation } from 'container/navigation/Navigation';
-import { Table } from 'shared/components/table/Table';
+import Button from 'components/shared/button/Button';
+import { Navigation } from 'components/shared/navigation/Navigation';
+import { Table } from 'components/main-menu/table/Table';
 import { ReactComponent as MenuIcon } from 'assets/returnMenu.svg';
 
-import { MAIN_ROUTE } from 'container/routes/ConstantsZX';
+import { MAIN_ROUTE } from 'container/routes/Constants';
 
 import styles from './Leaderboard.module.scss';
 

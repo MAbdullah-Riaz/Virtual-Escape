@@ -1,4 +1,4 @@
-import { Header } from 'data/table/Header';
+import { Header } from 'data/leaderboard/Header';
 import styles from './TableHeader.module.scss';
 
 export const TableHeader = () => {
@@ -6,7 +6,7 @@ export const TableHeader = () => {
   return (
     <tr>
       {headerNames.map((element) => (
-        <th>{element}</th>
+        <th key={element}>{element}</th>
       ))}
     </tr>
   );

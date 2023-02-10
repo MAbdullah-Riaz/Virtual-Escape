@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import Input from 'components/input/Input';
-import Button from 'shared/components/button/Button';
+import Input from 'components/shared/input/Input';
+import Button from 'components/shared/button/Button';
 import ExperiousLogo from 'assets/logo/logo1.png';
 import VirtualEscapeLogo from 'assets/logo/logo2.png';
 import { useAuthContext } from 'context/auth-context/AuthContainer';
 import { ReactComponent as ThumbIcon } from 'assets/thumb.svg';
-import { MAIN_ROUTE } from 'container/routes/ConstantsZX';
+import { MAIN_ROUTE } from 'container/routes/Constants';
 import styles from './Login.module.scss';
 
 const LogIn = () => {

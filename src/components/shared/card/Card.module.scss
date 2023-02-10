@@ -15,7 +15,7 @@
   cursor: pointer;
 
   .text-container {
-    font-size: 32px;
+    font-size: clamp(1.6rem, 3vw, 1.8rem);
     font-weight: normal;
   }
   img {
