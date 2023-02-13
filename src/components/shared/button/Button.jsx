@@ -6,16 +6,17 @@ const Button = ({
   rightImage,
   leftImage,
   className,
+  disabled,
   onClickHandler,
 }) => {
   const onClickHandle = () => {
     onClickHandler?.();
   };
-  const buttonTypeClass = buttonType === 'log-in' ? 'log-in' : 'base';
   return (
     <button
       onClick={onClickHandle}
-      className={`${styles['button-container']} ${styles[buttonTypeClass]} ${styles[className]} `}
+      className={`${styles['button-container']} ${className} `}
+      disabled={disabled}
     >
       {leftImage && leftImage} {name} {rightImage && rightImage}
     </button>

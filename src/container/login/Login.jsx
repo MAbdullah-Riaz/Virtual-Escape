@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { Navigation } from 'components/shared/navigation/Navigation';
 import Input from 'components/shared/input/Input';
 import Button from 'components/shared/button/Button';
 import ExperiousLogo from 'assets/logo/logo1.png';
@@ -11,30 +11,33 @@ import { MAIN_ROUTE } from 'container/routes/Constants';
 import styles from './Login.module.scss';
 
 const LogIn = () => {
-  const { setLogin } = useAuthContext();
-
+  const { setLogin, isAuthenticated } = useAuthContext();
   const navigate = useNavigate();
-  const [isLenMaxed, setIsLenMaxed] = useState(false);
+  const [disable, setDisable] = useState(true);
   const onChangeHandler = (e) => {
     if (e.target.value.length === 8) {
-      setIsLenMaxed(true);
+      setDisable(false);
     } else {
-      setIsLenMaxed(false);
+      setDisable(true);
     }
   };
 
-  const onClickHandler = () => {
-    if (isLenMaxed) {
-      setLogin();
+  useEffect(() => {
+    if (isAuthenticated) {
       navigate(MAIN_ROUTE);
     }
+  });
+
+  const onClickHandler = () => {
+    if (!disable) {
+      setLogin();
+    }
   };
+
   return (
     <div className={styles['main-login-container']}>
-      <div className={styles['logo-container']}>
-        <img src={ExperiousLogo} alt='experios-logo' />
-        <img src={VirtualEscapeLogo} alt='experios-logo' />
-      </div>
+      <Navigation logoOnlyRender={false} />
+
       <div className={styles['glassyBg']}>
         <p className={styles['name']}>VIRTUAL ESCAPE</p>
         <p className={styles['desc']}>
@@ -49,7 +52,8 @@ const LogIn = () => {
               buttonType={'log-in'}
               name={'login'}
               rightImage={<ThumbIcon />}
-              className={`${isLenMaxed ? 'len-maxed' : ''}`}
+              disabled={disable}
+              className={styles['login']}
               onClickHandler={onClickHandler}
             />
           </div>

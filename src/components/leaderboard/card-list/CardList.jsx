@@ -7,19 +7,17 @@ import cardStartGame from 'assets/card/card-start-game.svg';
 import { LEADERBOARD_ROUTE } from 'container/routes/Constants';
 
 import styles from './CardList.module.scss';
-
+const cardArray = [
+  { name: 'OUR GAMES', image: cardOurGames },
+  {
+    name: 'LEADERBOARD',
+    image: cardLeaderboard,
+    route: LEADERBOARD_ROUTE,
+  },
+  { name: 'HOW TO PLAY', image: cardHowToPlay },
+  { name: 'START GAME', image: cardStartGame },
+];
 export const CardList = () => {
-  const cardArray = [
-    { name: 'OUR GAMES', image: cardOurGames },
-    {
-      name: 'LEADERBOARD',
-      image: cardLeaderboard,
-      route: LEADERBOARD_ROUTE,
-    },
-    { name: 'HOW TO PLAY', image: cardHowToPlay },
-    { name: 'START GAME', image: cardStartGame },
-  ];
-
   return (
     <div className={styles['card-list']}>
       {cardArray.map((eachCard) => (

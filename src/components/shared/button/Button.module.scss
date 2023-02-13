@@ -8,9 +8,9 @@
   font-size: 18px;
   text-transform: uppercase;
   margin: 5px auto;
-
   cursor: pointer;
   justify-content: center;
+  background: linear-gradient(#67747b, #3d4549);
 
   @media screen and (max-device-width: 768px) {
     & {
@@ -23,35 +23,7 @@
     }
   }
 }
-
-.log-in {
-  background-color: rgb(31, 62, 81);
+.button-container:disabled {
+  background: rgba(17, 52, 70, 0.53);
   cursor: default;
-}
-.base {
-  background: linear-gradient(#67747b, #3d4549);
-}
-.len-maxed {
-  cursor: pointer;
-  background: linear-gradient(#f80705, #7b1e1d);
-}
-
-.return-to-main {
-  display: flex;
-
-  cursor: pointer;
-  margin: 50px 10px;
-  border-radius: 29px;
-  color: #ffffff;
-  border: none;
-  background: linear-gradient(#f80705, #7b1e1d);
-  font-size: clamp(0.9rem, 3.5vw, 1.1rem);
-  text-transform: uppercase;
-  font-family: Montserrat;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  width: min(350px, 70%);
-  height: 58px;
-  overflow-x: auto;
 }

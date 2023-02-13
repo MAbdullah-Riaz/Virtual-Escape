@@ -26,7 +26,7 @@ export const Leaderboard = () => {
           name='RETURN TO MAIN MENU'
           onClickHandler={onClickHandler}
           leftImage={<MenuIcon />}
-          className='return-to-main'
+          className={styles['return-to-main']}
         />
       </div>
     </div>

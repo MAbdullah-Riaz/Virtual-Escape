@@ -1,11 +1,15 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { AuthContext, AuthProvider } from './AuthContext';
 
-
 const AuthContextContainer = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    JSON.parse(localStorage.getItem('isAuthenticated')) ?? false
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState();
+
+  useEffect(() => {
+    setIsAuthenticated(
+      JSON.parse(localStorage.getItem('isAuthenticated')) ?? false
+    );
+  });
+
   const setLogin = () => {
     setIsAuthenticated(true);
     localStorage.setItem('isAuthenticated', JSON.stringify(true));

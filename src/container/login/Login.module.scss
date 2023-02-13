@@ -12,18 +12,12 @@
     max-width: 460px;
     display: flex;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 10px;
   }
-  .logo-container {
-    padding-top: 20px;
-    padding-left: 100px;
-    display: flex;
-    gap: 20px;
+  .login {
+    background: linear-gradient(#f80705, #7b1e1d);
+    cursor: pointer;
   }
-  img {
-    width: 100px;
-  }
-
   .glassyBg {
     border-radius: 10px;
     max-width: max(800px, 42%);
@@ -37,7 +31,6 @@
     text-align: center;
     padding-right: 10px;
     position: relative;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -55%);
