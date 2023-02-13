@@ -6,7 +6,7 @@ const Button = ({
   rightImage,
   leftImage,
   className,
-  disabled,
+  disable,
   onClickHandler,
 }) => {
   const onClickHandle = () => {
@@ -15,8 +15,8 @@ const Button = ({
   return (
     <button
       onClick={onClickHandle}
+      disabled={disable}
       className={`${styles['button-container']} ${className} `}
-      disabled={disabled}
     >
       {leftImage && leftImage} {name} {rightImage && rightImage}
     </button>

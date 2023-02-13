@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Button from 'components/shared/button/Button';
 import { Navigation } from 'components/shared/navigation/Navigation';
-import { Table } from 'components/main-menu/table/Table';
+import { Table } from 'components/leaderboard/table/Table';
 import { ReactComponent as MenuIcon } from 'assets/returnMenu.svg';
 
 import { MAIN_ROUTE } from 'container/routes/Constants';

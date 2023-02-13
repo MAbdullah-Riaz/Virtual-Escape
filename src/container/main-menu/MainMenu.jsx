@@ -1,5 +1,5 @@
 import { Navigation } from 'components/shared/navigation/Navigation';
-import { CardList } from 'components/leaderboard/card-list/CardList';
+import { CardList } from 'components/main-menu/card-list/CardList';
 import styles from './MainMenu.module.scss';
 
 const MainMenu = () => {

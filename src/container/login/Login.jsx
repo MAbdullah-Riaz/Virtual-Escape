@@ -26,11 +26,11 @@ const LogIn = () => {
     if (isAuthenticated) {
       navigate(MAIN_ROUTE);
     }
-  });
+  }, [isAuthenticated]);
 
   const onClickHandler = () => {
     if (!disable) {
-      setLogin();
+      setLogin('123token');
     }
   };
 
@@ -52,7 +52,7 @@ const LogIn = () => {
               buttonType={'log-in'}
               name={'login'}
               rightImage={<ThumbIcon />}
-              disabled={disable}
+              disable={disable}
               className={styles['login']}
               onClickHandler={onClickHandler}
             />
