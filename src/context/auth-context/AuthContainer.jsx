@@ -3,7 +3,7 @@ import { AuthContext, AuthProvider } from './AuthContext';
 
 const AuthContextContainer = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState();
-
+  const [gameCode, setGameCode] = useState();
   useEffect(() => {
     setIsAuthenticated(
       JSON.parse(localStorage.getItem('isAuthenticated')) ?? false
@@ -22,7 +22,14 @@ const AuthContextContainer = ({ children }) => {
     localStorage.removeItem('token');
   };
 
-  const value = { isAuthenticated, setIsAuthenticated, setLogin, setLogout };
+  const value = {
+    isAuthenticated,
+    gameCode,
+    setIsAuthenticated,
+    setLogin,
+    setLogout,
+    setGameCode,
+  };
 
   return <AuthProvider value={value}>{children}</AuthProvider>;
 };

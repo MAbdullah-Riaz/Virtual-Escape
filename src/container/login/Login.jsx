@@ -9,13 +9,14 @@ import { useAuthContext } from 'context/auth-context/AuthContainer';
 import { ReactComponent as ThumbIcon } from 'assets/thumb.svg';
 import { MAIN_ROUTE } from 'container/routes/Constants';
 import styles from './Login.module.scss';
-
+import { getResponse, checkServerStatus } from '../../axios/axios';
 const LogIn = () => {
-  const { setLogin, isAuthenticated } = useAuthContext();
+  const { setLogin, isAuthenticated, setGameCode, gameCode } = useAuthContext();
   const navigate = useNavigate();
   const [disable, setDisable] = useState(true);
   const onChangeHandler = (e) => {
     if (e.target.value.length === 8) {
+      setGameCode(e.target.value);
       setDisable(false);
     } else {
       setDisable(true);
@@ -28,9 +29,14 @@ const LogIn = () => {
     }
   }, [isAuthenticated]);
 
-  const onClickHandler = () => {
+  const testConnectionHandler = async () => {
+    checkServerStatus();
+  };
+
+  const loginClickHandler = async () => {
     if (!disable) {
-      setLogin('123token');
+      const token = await getResponse(gameCode);
+      setLogin(token);
     }
   };
 
@@ -46,7 +52,10 @@ const LogIn = () => {
         <div>
           <Input placeholder={'Game Code'} onChangeHandler={onChangeHandler} />
           <div className={styles['align-button']}>
-            <Button name='test connection' />
+            <Button
+              name='test connection'
+              onClickHandler={testConnectionHandler}
+            />
 
             <Button
               buttonType={'log-in'}
@@ -54,7 +63,7 @@ const LogIn = () => {
               rightImage={<ThumbIcon />}
               disable={disable}
               className={styles['login']}
-              onClickHandler={onClickHandler}
+              onClickHandler={loginClickHandler}
             />
           </div>
         </div>
