@@ -11,9 +11,11 @@ const AuthContextContainer = ({ children }) => {
   }, [isAuthenticated]);
 
   const setLogin = (token) => {
-    setIsAuthenticated(true);
-    localStorage.setItem('isAuthenticated', JSON.stringify(true));
-    localStorage.setItem('token', JSON.stringify(token));
+    if (!token.status) {
+      localStorage.setItem('token', JSON.stringify(token));
+      setIsAuthenticated(true);
+      localStorage.setItem('isAuthenticated', JSON.stringify(true));
+    }
   };
 
   const setLogout = () => {

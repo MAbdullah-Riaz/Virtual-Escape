@@ -17,7 +17,6 @@ export const getResponse = async (gameCode) => {
     );
     return response.data;
   } catch (error) {
-    console.log('Error fetching data: ', error);
     return error.response;
   }
 };
