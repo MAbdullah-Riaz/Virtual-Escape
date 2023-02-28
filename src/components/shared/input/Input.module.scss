@@ -1,0 +1,21 @@
+.input-container{
+position: relative;
+max-width: 480px;
+border-radius: 29px;
+margin: auto;
+
+input{
+    width: 90%;
+    border: none;
+    padding: 13px;
+    border-radius: 29px;
+    background-color: #3a4e5a;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.43);
+  
+ }
+ ::placeholder{
+    color: #ffffffcf;
+ }
+}

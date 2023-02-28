@@ -1,0 +1,29 @@
+.button-container {
+  padding: 18px 5px;
+  width: 230px;
+  text-align: center;
+  border-radius: 29px;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 5px auto;
+  cursor: pointer;
+  justify-content: center;
+  background: linear-gradient(#67747b, #3d4549);
+
+  @media screen and (max-device-width: 768px) {
+    & {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-device-width: 400px) {
+    & {
+      font-size: 13px;
+    }
+  }
+}
+.button-container:disabled {
+  background: rgba(17, 52, 70, 0.53);
+  cursor: default;
+}

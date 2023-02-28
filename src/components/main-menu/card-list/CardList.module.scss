@@ -1,0 +1,13 @@
+.card-list{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-self: center;
+  margin-bottom: 200px;
+
+@media screen and (max-device-width: 1300px) {
+& {
+ max-width: 900px;
+}}
+}

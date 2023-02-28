@@ -1,0 +1,23 @@
+.main-container {
+  background: url('../../assets/background-images/mainmenu.png') no-repeat
+    center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  .names {
+    text-align: center;
+    font-family: montserrat;
+    color: #fff;
+  }
+  h1 {
+    font-size: clamp(2rem, 5.1vw, 3.2rem);
+    margin-top: 0px;
+    padding: 0 10px;
+  }
+  p {
+    font-size: clamp(1.2rem, 1.6vw, 1.8rem);
+  }
+}

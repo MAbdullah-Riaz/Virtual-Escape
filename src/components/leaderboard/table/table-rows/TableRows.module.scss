@@ -1,0 +1,23 @@
+td {
+  text-align: center;
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+}
+tr:nth-child(odd) {
+  background-color: #2d4955;
+}
+
+tr:nth-child(even) {
+  background-color: #0e2634;
+}
+tr {
+  height: 35px;
+}
+
+@media screen and (max-device-width: 480px) {
+  tr {
+    font-size: small;
+  }
+  th {
+    font-size: 11px;
+  }
+}
